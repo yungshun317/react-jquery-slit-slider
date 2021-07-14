@@ -10,7 +10,10 @@ export default function SlitSlider() {
                 var $navArrows = $("#nav-arrows"),
                     $nav = $("#nav-dots > span"),
                     slitslider = $("#slider").slitslider({
-                        
+                        onBeforeChange: function(slide, pos) {
+                            $nav.removeClass("nav-dot-current");
+                            $nav.eq(pos).addClass("nav-dot-current");
+                        }
                     })
             })
         }
