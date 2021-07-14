@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import $ from "jquery";
 
 export default function SlitSlider() {
+    // [1] ComponentDidMount
+    useEffect(() => {
+        $(function) {
+            var page = (function() {
+                var $navArrows = $("#nav-arrows"),
+                    $nav = $("#nav-dots > span"),
+                    slitslider = $("#slider").slitslider({
+                        
+                    })
+            })
+        }
+    })
+
     return (
         <div id="slider" class="sl-slider-wrapper">
             <div class="sl-slider">
