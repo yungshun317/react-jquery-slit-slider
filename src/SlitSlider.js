@@ -93,6 +93,19 @@ export default function SlitSlider() {
                     </div>
                 </div>
             </div>
+
+            <nav id="nav-arrows" class="nav-arrows">
+                <span class="nav-arrow-prev">Previous</span>
+                <span class="nav-arrow-next">Next</span>
+            </nav>
+
+            <nav id="nav-dots" className="nav-dots">
+                <span class="nav-dot-current"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
         </div>
     );
 }
