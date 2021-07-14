@@ -75,6 +75,23 @@ export default function SlitSlider() {
                         </blockquote>
                     </div>
                 </div>
+
+                <div className="sl-slide bg-5"
+                     data-orientation="horizontal"
+                     data-slice1-rotation="-5"
+                     data-slice2-rotation="10"
+                     data-slice1-scale="2"
+                     data-slice2-scale="1">
+                    <div className="sl-slide-inner">
+                        <div className="deco" data-icon="t"></div>
+                        <h2>Acta Non Verba</h2>
+                        <blockquote>
+                            <p>I think if you want to eat more meat you should kill it yourself and eat it raw
+                                so that you are not blinded by the hypocrisy of having it processed for you.</p>
+                            <cite>Michael Klaper M.D.</cite>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
         </div>
     );
