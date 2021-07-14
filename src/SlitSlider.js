@@ -59,7 +59,22 @@ export default function SlitSlider() {
                     </div>
                 </div>
 
-                
+                <div className="sl-slide bg-4"
+                     data-orientation="vertical"
+                     data-slice1-rotation="-5"
+                     data-slice2-rotation="25"
+                     data-slice1-scale="2"
+                     data-slice2-scale="1">
+                    <div className="sl-slide-inner">
+                        <div className="deco" data-icon="I"></div>
+                        <h2>Donna nobis pacem</h2>
+                        <blockquote>
+                            <p>The human body has no more need for cows' milk than it does for dogs' milk,
+                                horses' milk, or giraffes' milk.</p>
+                            <cite>Michael Klaper M.D.</cite>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
         </div>
     );
