@@ -5,7 +5,7 @@ import $ from "jquery";
 export default function SlitSlider() {
     // [1] ComponentDidMount
     useEffect(() => {
-        $(function) {
+        $(function() {
             var page = (function() {
                 var $navArrows = $("#nav-arrows"),
                     $nav = $("#nav-dots > span"),
@@ -14,10 +14,16 @@ export default function SlitSlider() {
                             $nav.removeClass("nav-dot-current");
                             $nav.eq(pos).addClass("nav-dot-current");
                         }
-                    })
-            })
-        }
-    })
+                    }),
+                    init = function() {
+                        initEvents();
+                    },
+                    initEvents = function() {
+
+                    }
+            })();
+        });
+    }, [])
 
     return (
         <div id="slider" class="sl-slider-wrapper">
