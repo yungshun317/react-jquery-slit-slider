@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import $ from "jquery";
+import "./js/jquery.slitslider.js";
 
 export default function SlitSlider() {
     // [1] ComponentDidMount
@@ -41,7 +42,8 @@ export default function SlitSlider() {
                                 return false;
                             });
                         });
-                    }
+                    };
+                return { init : init };
             })();
         });
     }, [])

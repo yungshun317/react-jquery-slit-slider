@@ -3,7 +3,7 @@ import { render } from "react-dom";
 
 import App from "./App";
 
-import "../public/css/style.css";
+//import "../public/css/style.css";
 
 const $ = require("jquery");
 
