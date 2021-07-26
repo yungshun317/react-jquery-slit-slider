@@ -29,6 +29,18 @@ export default function SlitSlider() {
                             slitslider.previous();
                             return false;
                         });
+
+                        $nav.each(function(i) {
+                            $(this).on("click", function(event) {
+                                var $dot = $(this);
+                                if (!slitslider.isActive()) {
+                                    $nav.removeClass("nav-dot-current");
+                                    $dot.addClass("nav-dot-current");
+                                }
+                                slitslider.jump( i + 1 );
+                                return false;
+                            });
+                        });
                     }
             })();
         });
