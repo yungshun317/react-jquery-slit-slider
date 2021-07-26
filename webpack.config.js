@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
+const modernizr = require("modernizr");
 
 module.exports = {
     entry: {
@@ -30,6 +31,9 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/,
             use: ["babel-loader"]
+        }, {
+            test: /modernizr\.js$/,
+            use: ["webpack-modernizr-loader"]
         }]
     },
     plugins: [

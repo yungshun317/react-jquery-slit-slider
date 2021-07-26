@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import $ from "jquery";
+import "./js/jquery.ba-cond.min.js";
 import "./js/jquery.slitslider.js";
 
 export default function SlitSlider() {
