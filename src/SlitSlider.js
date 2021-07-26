@@ -25,6 +25,10 @@ export default function SlitSlider() {
                             return false;
                         });
 
+                        $navArrows.children(":first").on("click", function() {
+                            slitslider.previous();
+                            return false;
+                        });
                     }
             })();
         });
