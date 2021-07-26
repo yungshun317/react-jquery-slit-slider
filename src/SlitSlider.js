@@ -19,6 +19,11 @@ export default function SlitSlider() {
                         initEvents();
                     },
                     initEvents = function() {
+                        // Add navigation events
+                        $navArrows.children(":last").on("click", function() {
+                            slitslider.next();
+                            return false;
+                        });
 
                     }
             })();
